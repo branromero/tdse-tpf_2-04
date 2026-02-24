@@ -1,0 +1,5 @@
+../app/src/task_temperature.c:17:7:ADC_SEC1_Temperature	24	static,ignoring_inline_asm
+../app/src/task_temperature.c:30:7:ADC_SEC2_Temperature	24	static,ignoring_inline_asm
+../app/src/task_temperature.c:43:7:ADC_SEC3_Temperature	24	static,ignoring_inline_asm
+../app/src/task_temperature.c:58:19:ADC_Read_Sequence	32	static,ignoring_inline_asm
+../app/src/task_temperature.c:83:19:ADC_Read_Single	40	static,ignoring_inline_asm

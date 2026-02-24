@@ -1,0 +1,4 @@
+../app/src/eeprom.c:18:10:bytestowrite	2
+../app/src/eeprom.c:23:6:EEPROM_Write	2
+../app/src/eeprom.c:47:6:EEPROM_Read	2
+../app/src/eeprom.c:68:6:EEPROM_PageErase	1

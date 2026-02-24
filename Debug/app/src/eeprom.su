@@ -1,0 +1,4 @@
+../app/src/eeprom.c:18:10:bytestowrite	16	static
+../app/src/eeprom.c:23:6:EEPROM_Write	56	static
+../app/src/eeprom.c:47:6:EEPROM_Read	56	static
+../app/src/eeprom.c:68:6:EEPROM_PageErase	104	static

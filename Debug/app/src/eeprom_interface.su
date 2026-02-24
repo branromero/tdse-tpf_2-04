@@ -1,0 +1,3 @@
+../app/src/eeprom_interface.c:37:9:calcular_crc8	24	static
+../app/src/eeprom_interface.c:51:6:eeprom_load_sector_config	24	static
+../app/src/eeprom_interface.c:77:6:eeprom_save_sector_config	16	static
