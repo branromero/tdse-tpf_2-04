@@ -167,6 +167,6 @@ Este esquema de trabajo permite facilitar la modularización del software.
 Trabajo Práctico Final – **TDSE** 
 Sistema de Alarma de Incendio
 - **Brandon Romero**
-- **Matías**
-- **Sebastián**
-- **Diego** 
+- **Matías Amabile**
+- **Sebastián Soto**
+- **Diego Vera** 
