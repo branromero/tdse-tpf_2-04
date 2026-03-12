@@ -18,8 +18,8 @@ float ADC_SEC1_Temperature() {
     uint16_t values[2];
 
     if (HAL_OK == ADC_Read_Sequence(&hadc1, values, 2)) {
-        float vsense = (values[1] * 3.3f) / 4095.0f; // Rank 2 -> Channel 0
-        float temperature = ((vsense - V25) / AVG_SLOPE) + 25.0f;
+        float voltage = (values[1] * 3.3f) / 4095.0f; // Rank 2 -> Channel 0
+        float temperature = voltage * 100.0f;   // LM35: 10mV/°C
         return temperature;
     }
 
@@ -31,8 +31,8 @@ float ADC_SEC2_Temperature() {
     uint16_t value;
 
     if (HAL_OK == ADC_Read_Single(&hadc2, &value, ADC_CHANNEL_1)) {
-        float vsense = (value * 3.3f) / 4095.0f;
-        float temperature = ((vsense - V25) / AVG_SLOPE) + 25.0f;
+        float voltage = (value * 3.3f) / 4095.0f;
+        float temperature = voltage * 100.0f;   // LM35: 10mV/°C
         return temperature;
     }
 
@@ -44,8 +44,8 @@ float ADC_SEC3_Temperature() {
     uint16_t values[2];
 
     if (HAL_OK == ADC_Read_Sequence(&hadc1, values, 2)) {
-        float vsense = (values[0] * 3.3f) / 4095.0f; // Rank 1 -> Channel 4
-        float temperature = ((vsense - V25) / AVG_SLOPE) + 25.0f;
+        float voltage = (values[0] * 3.3f) / 4095.0f; // Rank 1 -> Channel 4
+        float temperature = voltage * 100.0f;   // LM35: 10mV/°C
         return temperature;
     }
 
